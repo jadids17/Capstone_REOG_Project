@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "reog-project",
+  "private_key_id": "a3b94c77b4e120aa253eda8f320a074048e593aa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3EaVglnQStxRV\nbSg8uABYPft5oW8+EMHl6IZIBuddJSXE1t5ePP9I3FJlwz5bkqUJhXcazUqDbhKI\nKhQ+HGzvQCwxYPmD+bjl1Dx54t8qnRiS1s88oycyv7SqL3C0a+aKAaQ1FHQ/m57X\n5TCTkG9Xl6X5aCmI/DyySsYF0RYbym7qO2wa60zb+OO+x+AlhRUiHYAA0mupdCjO\n3DaEkB6jRUhctmhPIoAW9NJSxtKcQAEUzZM6Gsspz+MxbWX5DGM+rXDPhgVd7pTE\nDMt/tow6mUr4RM3Pww6HO+/ukLdoIVq9Kxht6JdmzQSoU87Dw6fSOF1pt//DP00q\ncmJogfcnAgMBAAECggEAF+sPyttNZgaSewjMeYZm0SCkAwOzB45j7vhe1vlD8DkC\nwsF6AyEAD5Jtl4sXUhqKQoC0C4Xn5t0SQcURqP3Iw8eEHp13bCVL4YdFsX0RQD2P\nMNws7lS4sdo3LgcNuBzi3YQSYrb96zOXYMi6fIUh7vVKw5e22YVvHrJDRg5Hz7B9\nk693/LifxI4GljEHKA41QjJJTv1WN1DKirwzW+u/38ObARSDzcPQsgfTKiIT/qrJ\n5KVLw0IEZmDcBejjk5Wjnb507loGlgW32RiAHR2lyVnOKqN5ioDnRV97Qh/Vsusi\nkB1Msi7HsIqs9OoaJNkaL5fGeWAmycHJf2HQPMECXQKBgQD3Xs676hEt+4pZB1aa\nbqAeg1MF9JRkAX+uyQrpqPTe/kG/Lf08K0U0n8jIuVQ+opEGDdeGiWhJEWomtQRX\nTca4OQwlgMdkhW4FpApS5Ur4EE7h12mj8LFbRunfDWjRQLxFLqg3yak/KpY+qnsq\n2C2tI03d9X3E8vEe5ATMbNtI4wKBgQC9dJTOUngC4xGo+0rIj0ipxVPuiVDBNlfU\n0lOIQtrzt/wNq0q/kqHb77RV9azQrO1nyE37VTtFYD/BCY+BnKkd+4mQpXbrlruc\nczhEFY++O0FC6626fNtDVeJg9Sea9+CT4eZ827GStKlMCSVXZfcWF/42pflBxIX+\nC3186WQf7QKBgB/Sq4fTKdifhoHDhumhF6o1PMYEW96trq5eoK/Ek5PoY67jjLNj\n4ahOcfcYmHTiVwPPXg2puafEvMI0AVX15H2ooR5l/cC5xZimLMnTQ5y8BFnba3Sy\nry5N5iJSyEw7Jr1DrlJW+BXvNZrkNaoiW2Xtp8PJJB/lHQ3bSZ6+1kr/AoGAP3Ha\nH1n4vKbEFD3LJmztXYUqfVhYxctoEGo69QfGgRWdAArb5lm5gIi+cIbsT5mJi1bF\n3qQFTE9WKlQETdhjvhmtUNZIg86fl13yesJpt7/qM/nu3OPRHbSWMfgHQls+RufA\noxGDXujHRSJO8fzAiRKR3EUqur6QTKoWZQ1XrWUCgYEA3XNlPyMQfOanCvs8sNvu\nOu8Y+sGPQCsPY4T8czk7BcfYPIMPRnCwfPBvGJ0vaQGq5g0cmGg76QvloC3Z3P+C\nFoXid7jw7fVxp6wGizGKjGIvnoNA4BIWSnP0M/5ysTMBNyMlhzXKfBAGiCY9ZvI9\nsBFOrRDiqih5No3IjnDNcEk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "be-reog@reog-project.iam.gserviceaccount.com",
+  "client_id": "112365186657277504621",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/be-reog%40reog-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
