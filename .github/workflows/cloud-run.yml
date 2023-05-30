@@ -17,7 +17,6 @@ jobs:
         uses: google-github-actions/setup-gcloud@v0.2.0
         with:
           project_id: reog-project
-          service_account_email: be-reog@reog-project.iam.gserviceaccount.com
           service_account_key: aeb17b9a2ab19f03501f8b3d8caae6140c61b785
 
       - name: Configure Docker
