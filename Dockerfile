@@ -1,5 +1,5 @@
 FROM node:alpine
-WORKDIR /usr/backend/app
+WORKDIR /usr/backend
 COPY package*.json ./
 
 RUN npm install --production

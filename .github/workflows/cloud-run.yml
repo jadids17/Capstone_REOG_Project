@@ -16,8 +16,9 @@ jobs:
       - name: Set up Google Cloud SDK
         uses: google-github-actions/setup-gcloud@v0.2.0
         with:
-          project_id: reog-project
-          service_account_key: a3b94c77b4e120aa253eda8f320a074048e593aa
+          project_id: ${{ secrets.RUN_PROJECT }}
+          service_account_email: ${{ secrets.SA_EMAIL }}
+          service_account_key: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS}}
 
       - name: Configure Docker
         uses: docker/setup-buildx-action@v1
