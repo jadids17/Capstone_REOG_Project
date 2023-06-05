@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:14.21.2-alpine
 WORKDIR /usr/backend
 ENV PORT 8080
 COPY package*.json ./
