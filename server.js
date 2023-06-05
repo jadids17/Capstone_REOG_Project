@@ -40,7 +40,7 @@ db.sequelize
   .then(() => {
     console.log('Connection to the database has been established successfully.');
 
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`Server is running on port ${PORT}.`);
     });
   })
