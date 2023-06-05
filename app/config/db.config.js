@@ -1,8 +1,8 @@
 module.exports = {
-  HOST: "localhost",
+  HOST: "${{ secrets.DB_IP }}",
   USER: "root",
-  PASSWORD: "passwordnotpassed",
-  DB: "test_db",
+  PASSWORD: "${{ secrets.DB_PASSWORD }}",
+  DB: "${{ secrets.DB_NAME }}",
   dialect: "mysql",
   pool: {
     max: 5,
@@ -11,3 +11,5 @@ module.exports = {
     idle: 10000
   }
 };
+
+
