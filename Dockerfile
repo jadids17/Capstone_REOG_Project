@@ -1,5 +1,5 @@
 FROM node:alpine
-WORKDIR /usr/backend
+WORKDIR /server.js
 ENV PORT 8080
 COPY package*.json ./
 
