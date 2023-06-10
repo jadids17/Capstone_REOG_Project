@@ -9,7 +9,6 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
 exports.signup = async (req, res) => {
-  // Save User to Database
   try {
     const user = await User.create({
       username: req.body.username,
@@ -29,7 +28,6 @@ exports.signup = async (req, res) => {
       const result = user.setRoles(roles);
       if (result) res.send({ message: "User registered successfully!" });
     } else {
-      // user has role = 1
       const result = user.setRoles([1]);
       if (result) res.send({ message: "User registered successfully!" });
     }
