@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 test.rest
 README.md
+. ./config/db.config.js
