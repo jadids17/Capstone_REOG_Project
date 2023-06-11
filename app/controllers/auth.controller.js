@@ -80,6 +80,7 @@ exports.signin = async (req, res) => {
       username: user.username,
       email: user.email,
       roles: authorities,
+      message: "Login success full"
     });
   } catch (error) {
     return res.status(500).send({ message: error.message });
