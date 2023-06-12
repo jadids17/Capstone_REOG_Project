@@ -3,6 +3,7 @@ Divisi Machine Learning.
 Branch ini berisikan model untuk Prediksi kelayakan sebuah keluarga untuk menerima bantuan dari pemerintah.  
 Terdapat 2 model, yaitu perdiksi kelayakan huni rumah dan clustering Pendapatan orang tua.  
 Keduanya lalu disatukan menggunakan IF ELSE untuk menghasilkan prediksi kelayakan meneriman bantuan dari pemerintah.  
+[Link Dataset Rumah (Google Drive)](https://drive.google.com/drive/folders/1-d36TnkWRdmI7FHTfcGBeUzejYIL10U2?usp=sharing)
 [Link model Machine Learning Clustering Rumah (buka dengan google colaboratory)](https://drive.google.com/file/d/10NyXzQzEC1NMcqERqd0wS8_e6esmxq5X/view?usp=sharing)  
 
 Dataset Source :  
