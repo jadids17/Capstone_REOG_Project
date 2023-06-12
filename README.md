@@ -8,3 +8,4 @@ Keduanya lalu disatukan menggunakan IF ELSE untuk menghasilkan prediksi kelayaka
 Dataset Source :  
 [Rumah tidak layak huni dari Dinas Perumahan Rakyat dan Kawasan Permukiman Pontianak](https://dprkp.pontianak.go.id/database-rtlh.html)  
 [Rumah layak huni dari sebuah github repository](https://github.com/emanhamed/Houses-dataset/tree/master)
+ 
