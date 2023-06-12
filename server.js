@@ -21,7 +21,6 @@ app.use(
 
 // database
 const db = require("./app/models");
-const Role = db.role;
 
 db.sequelize.sync();
 
@@ -31,7 +30,6 @@ app.get("/", (req, res) => {
 
 // routes
 require("./app/routes/auth.routes")(app);
-require("./app/routes/user.routes")(app);
 require("./app/routes/features.routes")(app);
 
 const PORT = process.env.PORT || 8080;
@@ -48,20 +46,3 @@ db.sequelize
   .catch(err => {
     console.error('Unable to connect to the database:', err);
   });
-
-function initial() {
-  Role.create({
-    id: 1,
-    name: "user",
-  });
-
-  Role.create({
-    id: 2,
-    name: "moderator",
-  });
-
-  Role.create({
-    id: 3,
-    name: "admin",
-  });
-}

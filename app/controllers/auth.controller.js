@@ -1,7 +1,7 @@
 const db = require("../models");
 const config = require("../config/auth.config");
 const User = db.user;
-const Role = db.role;
+// const Role = db.role;
 
 const Op = db.Sequelize.Op;
 
@@ -15,21 +15,8 @@ exports.signup = async (req, res) => {
       email: req.body.email,
       password: bcrypt.hashSync(req.body.password, 8),
     });
-
-    if (req.body.roles) {
-      const roles = await Role.findAll({
-        where: {
-          name: {
-            [Op.or]: req.body.roles,
-          },
-        },
-      });
-
-      const result = user.setRoles(roles);
-      if (result) res.send({ message: "User registered successfully!" });
-    } else {
-      const result = user.setRoles([1]);
-      if (result) res.send({ message: "User registered successfully!" });
+    if(user){
+      res.send({ message: "User registered successfully!"})
     }
   } catch (error) {
     res.status(500).send({ message: error.message });
@@ -67,11 +54,6 @@ exports.signin = async (req, res) => {
                             expiresIn: 86400, // 24 hours
                            });
 
-    let authorities = [];
-    const roles = await user.getRoles();
-    for (let i = 0; i < roles.length; i++) {
-      authorities.push("ROLE_" + roles[i].name.toUpperCase());
-    }
 
     req.session.token = token;
 
@@ -79,8 +61,7 @@ exports.signin = async (req, res) => {
       id: user.id,
       username: user.username,
       email: user.email,
-      roles: authorities,
-      message: "Login success full"
+      message: "Login successful"
     });
   } catch (error) {
     return res.status(500).send({ message: error.message });
