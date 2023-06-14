@@ -12,7 +12,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 app = FastAPI()  # create a new FastAPI app instance
 
 # port = int(os.getenv("PORT"))
-port = 8080
+port = 8081
 
 model1 = tf.keras.models.load_model('Kelayakan/lite_model.h5')
 model2 = tf.keras.models.load_model('Kelayakan/Kmeans.h5')
