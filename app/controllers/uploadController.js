@@ -2,7 +2,7 @@ const processFile = require("../middleware/uploadImages");
 const { format } = require("util");
 const { Storage } = require("@google-cloud/storage");
 
-const storage = new Storage({ keyFilename: "google-cloud-key.json" });
+const storage = new Storage({ keyFilename: "../../reog-project-a3b94c77b4e1.json" });
 const bucket = storage.bucket("files-for-ml-analytics");
 
 const upload = async (req, res) => {
@@ -24,7 +24,7 @@ const upload = async (req, res) => {
 
     blobStream.on("finish", async (data) => {
       const publicUrl = format(
-        `https://storage.googleapis.com/files-for-ml-analytics/${blob.name}`
+        `https://storage.googleapis.com/${bucket.name}/${blob.name}`
       );
 
       try {
