@@ -10,5 +10,5 @@ module.exports = function(app) {
       next();
     });
 
-    app.post("/api/features/bansos", controller.bansos)
+    app.post("/bansos/upload", controller.bansos)
 };

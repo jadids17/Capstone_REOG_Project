@@ -6,7 +6,7 @@ exports.bansos = async (req, res) => {
     try {
       const fotoKTP = await upload.upload(req.body.fotoKTP);
       const fotoKK = await upload.upload(req.body.fotoKK);
-      const fotoSKTM = await upload.upload(req.body.fotoKK);
+      const fotoSKTM = await upload.upload(req.body.fotoSKTM);
 
       const user = await Bansos.create({
         namaKepalaKeluarga: req.body.namaKepalaKeluarga,

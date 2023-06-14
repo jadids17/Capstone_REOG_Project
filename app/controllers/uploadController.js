@@ -3,7 +3,7 @@ const { format } = require("util");
 const { Storage } = require("@google-cloud/storage");
 
 const storage = new Storage({ keyFilename: "google-cloud-key.json" });
-const bucket = storage.bucket("bezkoder-e-commerce");
+const bucket = storage.bucket("files-for-ml-analytics");
 
 const upload = async (req, res) => {
   try {
@@ -24,7 +24,7 @@ const upload = async (req, res) => {
 
     blobStream.on("finish", async (data) => {
       const publicUrl = format(
-        `https://storage.googleapis.com/${bucket.name}/${blob.name}`
+        `https://storage.googleapis.com/files-for-ml-analytics/${blob.name}`
       );
 
       try {
