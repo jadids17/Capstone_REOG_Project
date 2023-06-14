@@ -14,8 +14,8 @@ app = FastAPI()  # create a new FastAPI app instance
 # port = int(os.getenv("PORT"))
 port = 8081
 
-model1 = tf.keras.models.load_model('Kelayakan/lite_model.h5')
-model2 = tf.keras.models.load_model('Kelayakan/Kmeans.h5')
+model1 = tf.keras.models.load_model('lite_model.h5')
+model2 = tf.keras.models.load_model('Kmeans.h5')
 
 def houseDetection(file):
     img = image.load_img(file, target_size=(100,100,3))
