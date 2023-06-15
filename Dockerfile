@@ -9,8 +9,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 8081
-
 ENV PYTHONUNBUFFERED=1
 
 CMD ["python", "-u", "main.py"]
