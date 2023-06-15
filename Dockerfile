@@ -11,6 +11,6 @@ COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "-u", "main.py"]
+CMD ["python", "-u",  "--host", "0.0.0.0", "--port", "8081", "main.py"]
 
 # CMD ["uvicorn", "--host", "0.0.0.0", "--port", "8081", "main:app"]
