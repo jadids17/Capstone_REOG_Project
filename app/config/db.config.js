@@ -2,7 +2,7 @@ module.exports = {
   HOST: '34.101.150.85',
   USER: "root",
   PASSWORD: 'mads_jads',
-  DB: 'REOGDB',
+  DB: 'REOGDB2',
   dialect: "mysql",
   pool: {
     max: 5,
