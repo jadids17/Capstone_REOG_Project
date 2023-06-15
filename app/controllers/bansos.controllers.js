@@ -1,13 +1,15 @@
 const db = require("../models");
 const Bansos = db.bansos;
-// const upload = require("./uploadController")
+const Multer = require('multer')
+const ImgUpload = require("./uploadController")
+
+const multer = Multer({
+  storage: Multer.MemoryStorage,
+  fileSize: 5 * 1024 * 1024
+})
 
 exports.bansos = async (req, res) => {
     try {
-      // const fotoKTP = await upload.upload(req.body.fotoKTP);
-      // const fotoKK = await upload.upload(req.body.fotoKK);
-      // const fotoSKTM = await upload.upload(req.body.fotoSKTM);
-
       const user = await Bansos.create({
         namaKepalaKeluarga: req.body.namaKepalaKeluarga,
         nik: req.body.nik,

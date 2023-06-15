@@ -8,6 +8,9 @@ module.exports = function(app) {
         "Origin, Content-Type, Accept"
       );
       next();
+
+        
+
     });
 
     app.post("/bansos/upload", controller.bansos)
