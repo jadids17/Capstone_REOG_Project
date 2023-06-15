@@ -1,6 +1,8 @@
 const { verifySignUp, processFileMiddleware } = require("../middleware");
 const controller = require("../controllers/auth.controller");
 
+const multer = require('multer')
+const upload = multer()
 
 module.exports = function(app) {
   app.use(function(req, res, next) {

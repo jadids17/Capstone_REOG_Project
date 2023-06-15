@@ -7,10 +7,11 @@ const Op = db.Sequelize.Op;
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const multer = require("multer")
-
 const upload = multer()
 
+
 exports.signup = async (req, res) => {
+  upload.none()
   try {
     const user = await User.create({
       namaLengkap: req.body.namaLengkap,
@@ -26,6 +27,7 @@ exports.signup = async (req, res) => {
 };
 
 exports.signin = async (req, res) => {
+  upload.none()
   try {
     const user = await User.findOne({
       where: {
