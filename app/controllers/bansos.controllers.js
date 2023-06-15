@@ -1,6 +1,5 @@
 const db = require("../models");
 const Bansos = db.bansos;
-const Multer = require('multer')
 const ImgUpload = require("./uploadController")
 
 const multer = Multer({

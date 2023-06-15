@@ -1,4 +1,4 @@
-const { verifySignUp, processFileMiddleware } = require("../middleware");
+const { verifySignUp } = require("../middleware");
 const controller = require("../controllers/auth.controller");
 
 const multer = require('multer')

@@ -10,14 +10,14 @@ app.use(express.json());
 
 app.use(express.urlencoded({ extended: true }));
 
-app.use(
-  cookieSession({
-    name: "reog-session",
-    keys: ["COOKIE_SECRET12"], 
-    httpOnly: true,
-    sameSite: 'strict'
-  })
-);
+// app.use(
+//   cookieSession({
+//     name: "reog-session",
+//     keys: ["COOKIE_SECRET12"], 
+//     httpOnly: true,
+//     sameSite: 'strict'
+//   })
+// );
 
 // database
 const db = require("./app/models");

@@ -63,6 +63,7 @@ exports.signin = async (req, res) => {
       id: user.id,
       namaLengkap: user.namaLengkap,
       email: user.email,
+      token: token,
       message: "Login successful"
     });
   } catch (error) {
