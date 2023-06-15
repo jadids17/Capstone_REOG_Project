@@ -1,12 +1,12 @@
 const db = require("../models");
 const Bansos = db.bansos;
-const upload = require("./uploadController")
+// const upload = require("./uploadController")
 
 exports.bansos = async (req, res) => {
     try {
-      const fotoKTP = await upload.upload(req.body.fotoKTP);
-      const fotoKK = await upload.upload(req.body.fotoKK);
-      const fotoSKTM = await upload.upload(req.body.fotoSKTM);
+      // const fotoKTP = await upload.upload(req.body.fotoKTP);
+      // const fotoKK = await upload.upload(req.body.fotoKK);
+      // const fotoSKTM = await upload.upload(req.body.fotoSKTM);
 
       const user = await Bansos.create({
         namaKepalaKeluarga: req.body.namaKepalaKeluarga,
@@ -15,9 +15,9 @@ exports.bansos = async (req, res) => {
         alamat: req.body.alamat,
         umur: req.body.umur,
         rangePendapatan: req.body.rangePendapatan,
-        fotoKTP: fotoKTP,
-        fotoKK: fotoKK,
-        fotoSKTM: fotoSKTM,
+        fotoKTP: req.body.fotoKTP,
+        fotoKK: req.body.fotoKK,
+        fotoSKTM: req.body.fotoSKTM,
         fotoKeteranganDomisili: req.body.fotoKeteranganDomisili,
         fotoDepanRumah: req.body.fotoDepanRumah,
       });
