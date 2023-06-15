@@ -32,7 +32,6 @@ module.exports = (sequelize, Sequelize) => {
       },
       fotoDepanRumah: {
         type: Sequelize.STRING,
-        primaryKey: true
       },
     });
     return Bansos;
