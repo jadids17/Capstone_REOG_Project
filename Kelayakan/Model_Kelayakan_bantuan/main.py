@@ -6,10 +6,11 @@ import os
 from tensorflow.keras.preprocessing import image
 import shutil
 import pandas as pd
+from flask import Flask, request, jsonify
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-app = FastAPI()  # create a new FastAPI app instance
+app = Flask(__name__)  # create a new FastAPI app instance
 
 # port = int(os.getenv("PORT"))
 port = 8080
@@ -94,4 +95,4 @@ def Kelayakan(pendapatan: int, input: UploadFile = File(...)):
     return {"Kelayakan": label[hasil_akhir]}
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=port, timeout_keep_alive=1200)
+    app.run(host="0.0.0.0", port=port, debug=True)
