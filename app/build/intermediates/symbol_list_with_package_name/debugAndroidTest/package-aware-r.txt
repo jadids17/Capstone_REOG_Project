@@ -1,3 +1,0 @@
-com.reihan.reogapp.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

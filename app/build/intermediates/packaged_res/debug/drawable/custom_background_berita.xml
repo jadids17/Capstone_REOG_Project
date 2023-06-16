@@ -1,4 +1,0 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#BCBCBC" /> <!-- Warna latar abu-abu muda -->
-    <corners android:radius="8dp" /> <!-- Radius sudut 8dp -->
-</shape>
