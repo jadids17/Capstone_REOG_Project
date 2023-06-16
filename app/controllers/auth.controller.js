@@ -36,7 +36,6 @@ exports.signin = async (req, res) => {
     if (!user) {
       return res.status(404).send({ message: "User Not found." });
     }
-
     const passwordIsValid = bcrypt.compareSync(
       req.body.password,
       user.password
@@ -47,7 +46,6 @@ exports.signin = async (req, res) => {
         message: "Invalid Password!",
       });
     }
-
     const token = jwt.sign({ id: user.id },
                            config.secret,
                            {
@@ -56,15 +54,12 @@ exports.signin = async (req, res) => {
                             expiresIn: 86400, // 24 hours
                            });
 
-
-    // req.session.token = token;
-
     return res.status(200).send({
       id: user.id,
       namaLengkap: user.namaLengkap,
       email: user.email,
       token: token,
-      message: "Login successful"
+      // message: "Login successful"
     });
   } catch (error) {
     return res.status(500).send({ message: error.message });
