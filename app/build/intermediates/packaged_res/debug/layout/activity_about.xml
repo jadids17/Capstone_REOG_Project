@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_team_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team ID: C23-PS085"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_team_members_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Team Members:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. (ML-45) M148DSX0066 - Agung Barokah - Universitas Bina Insani - [Active]" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2. (ML-11) M259DSX0007 - Muhammad Amiruddin - Muhammadiyah Surakarta University - [Active]" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="3. (CC-59) C241DSX3582 - Fauzan Krisniawan - Universitas Mercu Buana - [Active]" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="4. (CC-57) C131DSX1927 - Jadid Habibillah Al Ghazi Supriyono - Ahmad Dahlan University - [Active]" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="5. (MD-19) A248DKX4461 - Reihan Septyawan - University of Muhammadiyah Jakarta - [Active]" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="6. (ML-71) M151DSX3467 - Ido Suranta Pandapotan Munthe - Universitas Brawijaya - [Active]" />
+
+        <TextView
+            android:id="@+id/tv_selected_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="@color/black"
+            android:text="Final Selected Themes: Digital Government Transformation"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_project_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="@color/black"
+            android:text="Title of the Project: Resident Organizer (REOG)"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_project_scope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:textColor="@color/black"
+            android:text="Project Scope &amp; Deliverables:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_project_planning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. Project Planning: Jadid Habibilah (Project Manager)" />
+
+        <TextView
+            android:id="@+id/tv_project_design"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2. Design: Agung Barokah (Design Team)" />
+
+        <TextView
+            android:id="@+id/tv_project_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="3. Development: Reihan Septyawan (Development Team)" />
+
+        <TextView
+            android:id="@+id/tv_project_qa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="4. Quality Assurance: Muhammad Amiruddin (Quality Assurance Team)" />
+
+        <TextView
+            android:id="@+id/tv_project_deployment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="5. Deployment: Fauzan Krisniawan (Devops Team)" />
+
+        <TextView
+            android:id="@+id/tv_project_acceptance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="6. User Acceptance: Reihan Septyawan (Quality Assurance)" />
+
+        <TextView
+            android:id="@+id/tv_project_documentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="7. Documentation: Ido Munthe (Technical Writer)" />
+
+        <TextView
+            android:id="@+id/tv_tools_ide_library"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Tools/IDE/Library:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_machine_learning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Machine Learning:" />
+
+        <TextView
+            android:id="@+id/tv_ide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. IDE: Google Colab" />
+
+        <TextView
+            android:id="@+id/tv_library_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Library List:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Tensorflow" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - numpy" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - pandas" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - matplotlib" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - scikit-learn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - geopandas" />
+
+        <TextView
+            android:id="@+id/tv_platform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Platform: Mobile" />
+
+        <TextView
+            android:id="@+id/tv_database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Database: BigQuery" />
+
+        <TextView
+            android:id="@+id/tv_resources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Resources: Dummy Dataset Penduduk" />
+
+        <TextView
+            android:id="@+id/tv_cloud_computing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Cloud Computing:" />
+
+        <TextView
+            android:id="@+id/tv_deployment_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. Deployment Service: App engine" />
+
+        <TextView
+            android:id="@+id/tv_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2. Storage: BigQuery" />
+
+        <TextView
+            android:id="@+id/tv_ide_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="3. IDE: VSC Google Cloud console" />
+
+        <TextView
+            android:id="@+id/tv_backend_framework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="4. Back-end framework: Express.js" />
+
+        <TextView
+            android:id="@+id/tv_cloud_resources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="5. Resources: GCP voucher: $350 Backup cost: $200" />
+
+        <TextView
+            android:id="@+id/tv_mobile_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Mobile Development:" />
+
+        <TextView
+            android:id="@+id/tv_ide_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="1. IDE: Android Studio" />
+
+        <TextView
+            android:id="@+id/tv_library_list_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Library List:" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Glide" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - View Binding" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Retrofit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Coroutines" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - View Model" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Live Data" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Recycler View" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Interceptors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="   - Material Design" />
+
+        <TextView
+            android:id="@+id/tv_platform_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="2. Platform: Mobile" />
+
+        <TextView
+            android:id="@+id/tv_database_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="3. Database: Firebase" />
+
+        <TextView
+            android:id="@+id/tv_resources_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="4. Resources: Mobile phone emulator, Firebase storage" />
+
+        <TextView
+            android:id="@+id/tv_machine_learning_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textColor="@color/black"
+            android:text="Machine Learning Part:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- The machine Learning part of our Capstone is mainly focusing on the development of recommendation features, such as making predictions about is a family eligible of receiving nine basic food (sembako) or not and also making predictions is a family eligible of receiving KIP (Kartu Indonesia Pintar) or not."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_mobile_development_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Mobile Development Part:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Conduct planning and analysis to identify problems with the application regarding features that will be needed and not needed so that the required functionality meets these needs."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Using Google Forms for quantity and quality data collection."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Processing data through Excel to get important points in making prototypes."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Using Figma to create low-fidelity and high-fidelity application designs."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Using Maze, as an interactive design test that will be shared by users who are willing to volunteer in this application"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- Using Kotlin Native as a programming language and Android Studio to build this Application"
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:id="@+id/tv_cloud_computing_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Cloud Computing Part:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- In this project, the CC cohort contributed to creating a back-end server. Then connect it with machine learning and databases using the API. Furthermore, after the data is processed by the ML cohort, we take the data to be displayed on the front end."
+            android:paddingLeft="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="- We use the app engine for application deployment because of its serverless infrastructure."
+            android:paddingLeft="16dp" />
+    </LinearLayout>
+</ScrollView>

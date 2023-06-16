@@ -1,0 +1,6 @@
+com.reihan.reogapp.test.app-androidTest-0 C:\Capstone_Activity\ReogApp\app\build\generated\res\resValues\androidTest\debug
+com.reihan.reogapp.test.app-mergeDebugAndroidTestResources-1 C:\Capstone_Activity\ReogApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.reihan.reogapp.test.app-mergeDebugAndroidTestResources-2 C:\Capstone_Activity\ReogApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.reihan.reogapp.test.app-merged_res-3 C:\Capstone_Activity\ReogApp\app\build\intermediates\merged_res\debugAndroidTest
+com.reihan.reogapp.test.app-core-1.5.0-4 C:\Users\reiha\.gradle\caches\transforms-3\58e9668c2baade4a58df402ddb6cb231\transformed\core-1.5.0\res
+com.reihan.reogapp.test.app-annotation-experimental-1.3.0-5 C:\Users\reiha\.gradle\caches\transforms-3\b8147509a8ac135de179495be427007c\transformed\annotation-experimental-1.3.0\res

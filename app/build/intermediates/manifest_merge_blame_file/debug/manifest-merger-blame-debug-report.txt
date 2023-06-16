@@ -1,0 +1,198 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.reihan.reogapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+14        android:name="com.reihan.reogapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.reihan.reogapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:7:5-51:19
+20        android:name="com.reihan.reogapp.HiltApp"
+20-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:8:9-32
+21        android:allowBackup="true"
+21-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:9:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.10.1] C:\Users\reiha\.gradle\caches\transforms-3\8479ec2cf052912c5c6db918b357f906\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:10:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:11:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:12:9-43
+28        android:label="@string/app_name"
+28-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:13:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:14:9-54
+30        android:supportsRtl="true"
+30-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:15:9-35
+31        android:theme="@style/Theme.ReogApp" >
+31-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:16:9-45
+32        <activity
+32-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:18:9-20:40
+33            android:name="com.reihan.reogapp.ui.faq.FaqActivity"
+33-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:19:13-47
+34            android:exported="false" />
+34-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:20:13-37
+35        <activity
+35-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:21:9-23:40
+36            android:name="com.reihan.reogapp.ui.about.AboutActivity"
+36-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:22:13-51
+37            android:exported="false" />
+37-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:23:13-37
+38        <activity
+38-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:24:9-26:40
+39            android:name="com.reihan.reogapp.ui.setting.SettingActivity"
+39-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:25:13-55
+40            android:exported="false" />
+40-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:26:13-37
+41        <activity
+41-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:27:9-29:40
+42            android:name="com.reihan.reogapp.ui.bansos.BansosActivity"
+42-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:28:13-53
+43            android:exported="false" />
+43-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:29:13-37
+44        <activity
+44-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:30:9-38:20
+45            android:name="com.reihan.reogapp.ui.splash.SplashActivity"
+45-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:31:13-53
+46            android:exported="true" >
+46-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:32:13-36
+47            <intent-filter>
+47-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:33:13-37:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:34:17-69
+48-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:34:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:36:17-77
+50-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:36:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:39:9-41:40
+54            android:name="com.reihan.reogapp.ui.register.RegisterActivity"
+54-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:40:13-57
+55            android:exported="false" />
+55-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:41:13-37
+56        <activity
+56-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:42:9-44:40
+57            android:name="com.reihan.reogapp.ui.login.LoginActivity"
+57-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:43:13-51
+58            android:exported="false" />
+58-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:44:13-37
+59        <activity
+59-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:45:9-47:40
+60            android:name="com.reihan.reogapp.ui.launcher.LauncherActivity"
+60-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:46:13-57
+61            android:exported="false" />
+61-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:47:13-37
+62        <activity
+62-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:48:9-50:40
+63            android:name="com.reihan.reogapp.MainActivity"
+63-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:49:13-41
+64            android:exported="false" />
+64-->C:\Capstone_Activity\ReogApp\app\src\main\AndroidManifest.xml:50:13-37
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+68            android:authorities="com.reihan.reogapp.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\reiha\.gradle\caches\transforms-3\86963823ea220ddc1cde29bea6dcd147\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\reiha\.gradle\caches\transforms-3\b708f85c01e92af7f6976704215c2074\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\reiha\.gradle\caches\transforms-3\b708f85c01e92af7f6976704215c2074\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\reiha\.gradle\caches\transforms-3\b708f85c01e92af7f6976704215c2074\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+79        </provider>
+80
+81        <uses-library
+81-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+82            android:name="androidx.window.extensions"
+82-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+83            android:required="false" />
+83-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+84        <uses-library
+84-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+85            android:name="androidx.window.sidecar"
+85-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0] C:\Users\reiha\.gradle\caches\transforms-3\8d64541bb9c3b4e053259b822388138d\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+87
+88        <receiver
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+90            android:directBootAware="false"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+91            android:enabled="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+92            android:exported="true"
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+96            </intent-filter>
+97            <intent-filter>
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+98                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+99            </intent-filter>
+100            <intent-filter>
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+101                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+102            </intent-filter>
+103            <intent-filter>
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+104                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\reiha\.gradle\caches\transforms-3\01ef3d5f389e3abcd3d8d5f357c85d02\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+105            </intent-filter>
+106        </receiver>
+107    </application>
+108
+109</manifest>

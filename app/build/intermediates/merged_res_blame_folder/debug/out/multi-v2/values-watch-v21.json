@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.reihan.reogapp-mergeDebugResources-2:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\reiha\\.gradle\\caches\\transforms-3\\0567ff73d6f43cf183513fb2212a9940\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}
