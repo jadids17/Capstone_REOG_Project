@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/iv_launcher_reog"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/content_description_launcherscreen"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_reog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_launcher_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="64sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/iv_launcher_reog"
+        app:layout_constraintStart_toStartOf="@+id/iv_launcher_reog"
+        app:layout_constraintTop_toBottomOf="@+id/iv_launcher_reog" />
+
+    <TextView
+        android:id="@+id/login_authentication_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_authentication_login"
+        android:textColor="#5C5C5C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_launcher_title" />
+
+    <com.reihan.reogapp.customui.CustomEmail
+        android:id="@+id/et_email_login"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        android:hint="@string/label_authentication_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_authentication_label" />
+
+    <com.reihan.reogapp.customui.CustomPassword
+        android:id="@+id/et_password_login"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="16dp"
+        android:hint="@string/label_authentication_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_login" />
+
+    <com.reihan.reogapp.customui.CustomButton
+        android:id="@+id/login_button"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_authentication_login"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_login" />
+
+    <TextView
+        android:id="@+id/register_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_authentication_login_question"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/hyperlink_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-75dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/label_authentication_register_with_underline"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/register_label"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/alternative_guest_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="@string/label_authentication_guest_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_label" />
+
+    <com.reihan.reogapp.customui.CustomButton
+        android:id="@+id/btn_alternative_guest"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_authentication_guest_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alternative_guest_label" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
