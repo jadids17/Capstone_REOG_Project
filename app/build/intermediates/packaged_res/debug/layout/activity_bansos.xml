@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:id="@+id/header_form_bansos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/tv_form_bansos"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_kepala_keluarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_form_bansos_kk"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_form_bansos" />
+
+        <EditText
+            android:id="@+id/et_name_kepala_keluarga"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="name"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_kk"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kepala_keluarga"
+            tools:ignore="LabelFor,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_nik"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_name_kepala_keluarga" />
+
+        <EditText
+            android:id="@+id/et_nik"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_nik"
+            android:inputType="number"
+            android:maxLength="16"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nik"
+            tools:ignore="LabelFor,RtlSymmetry"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_tanggal_lahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_ttl"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_nik" />
+
+        <EditText
+            android:id="@+id/et_tanggal_lahir"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_ttl"
+            android:inputType="date"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_lahir"
+            tools:ignore="RtlSymmetry"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_alamat"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_tanggal_lahir" />
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:autofillHints="postalAddress"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_alamat"
+            android:inputType="textPostalAddress"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alamat"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_umur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_umur"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_alamat" />
+
+        <EditText
+            android:id="@+id/et_umur"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_umur"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_umur"
+            android:importantForAutofill="no"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_range_pendapatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_range"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_umur" />
+
+        <EditText
+            android:id="@+id/et_pendapatan"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_background_profile_outline"
+            android:hint="@string/et_form_bansos_range"
+            android:importantForAutofill="no"
+            android:paddingStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_range_pendapatan"
+            tools:ignore="RtlSymmetry,TextFields" />
+
+        <RadioGroup
+            android:id="@+id/rg_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_pendapatan">
+
+            <RadioButton
+                android:id="@+id/rb_0_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/range_pertama"/>
+
+            <RadioButton
+                android:id="@+id/rb_1000_2000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/range_kedua" />
+
+            <RadioButton
+                android:id="@+id/rb_2000_3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/range_ketiga" />
+
+            <RadioButton
+                android:id="@+id/rb_3000_plus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/range_keempat" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ktp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_ktp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rg_income" />
+
+        <View
+            android:id="@+id/view1_upload_ktp"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ktp" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_ktp"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/iv_form_bansos_ktp"
+            android:src="@drawable/ic_picture_add"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_ktp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_ktp"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_ktp" />
+
+        <View
+            android:id="@+id/view2_upload_ktp"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_ktp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_ktp"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_ktp" />
+
+        <Button
+            android:id="@+id/btn_delete_ktp"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_ktp"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_ktp"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_ktp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_kk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/iv_form_bansos_kk"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_ktp" />
+
+        <View
+            android:id="@+id/view1_upload_kk"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kk" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_kk"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/tv_form_bansos_kk_iv"
+            android:src="@drawable/ic_picture_add"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_kk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_kk"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_kk" />
+
+        <View
+            android:id="@+id/view2_upload_kk"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_kk"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_kk"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_kk" />
+
+        <Button
+            android:id="@+id/btn_delete_kk"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_kk"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_kk"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_kk"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_sktm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_sktm"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_kk" />
+
+        <View
+            android:id="@+id/view1_upload_sktm"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sktm" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_sktm"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/iv_form_bansos_sktm"
+            android:src="@drawable/ic_picture_add"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_sktm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_sktm"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_sktm" />
+
+        <View
+            android:id="@+id/view2_upload_sktm"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_sktm"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_sktm"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_sktm" />
+
+        <Button
+            android:id="@+id/btn_delete_sktm"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_sktm"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_sktm"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_sktm"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_skd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_domisili"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_sktm" />
+
+        <View
+            android:id="@+id/view1_upload_skd"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_skd" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_skd"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/iv_form_bansos_domisili"
+            android:src="@drawable/ic_picture_add"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_skd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_skd"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_skd" />
+
+        <View
+            android:id="@+id/view2_upload_skd"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_skd"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_skd"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_skd" />
+
+        <Button
+            android:id="@+id/btn_delete_skd"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_skd"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_skd"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_skd"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_photo_depan_rumah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_depan_rumah"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_skd" />
+
+        <View
+            android:id="@+id/view1_upload_depan_rumah"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_photo_depan_rumah" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_depan_rumah"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/iv_form_bansos_depan_rumah"
+            android:src="@drawable/ic_add_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_depan_rumah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_depan_rumah"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_depan_rumah" />
+
+        <View
+            android:id="@+id/view2_upload_depan_rumah"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_depan_rumah"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_depan_rumah"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_depan_rumah" />
+
+        <Button
+            android:id="@+id/btn_delete_depan_rumah"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_depan_rumah"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_depan_rumah"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_depan_rumah"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_photo_dalam_rumah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tv_form_bansos_dalam_rumah"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_depan_rumah" />
+
+        <View
+            android:id="@+id/view1_upload_dalam_rumah"
+            android:layout_width="360dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom_background_outline_top_radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_photo_dalam_rumah" />
+
+
+        <ImageView
+            android:id="@+id/iv_add_photos_dalam_rumah"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:contentDescription="@string/iv_form_bansos_dalam_rumah"
+            android:src="@drawable/ic_add_picture"
+            app:layout_constraintBottom_toBottomOf="@+id/view1_upload_dalam_rumah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_dalam_rumah"
+            app:layout_constraintTop_toTopOf="@+id/view1_upload_dalam_rumah" />
+
+        <View
+            android:id="@+id/view2_upload_dalam_rumah"
+            android:layout_width="360dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/custom_white_shape"
+            app:layout_constraintEnd_toEndOf="@+id/view1_upload_dalam_rumah"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/view1_upload_dalam_rumah"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_dalam_rumah" />
+
+        <Button
+            android:id="@+id/btn_delete_dalam_rumah"
+            android:layout_width="89dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/remove"
+            android:padding="0dp"
+            android:text="@string/tv_form_bansos_delete"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2_upload_dalam_rumah"
+            app:layout_constraintEnd_toEndOf="@+id/view2_upload_dalam_rumah"
+            app:layout_constraintTop_toBottomOf="@+id/view1_upload_dalam_rumah"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/btn_upload_data_bansos"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/tv_form_bansos_simpan"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2_upload_dalam_rumah" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
