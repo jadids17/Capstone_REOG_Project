@@ -1,7 +1,7 @@
 # REOG - Resident Organizer
 <img src="https://github.com/jadids17/Capstone_REOG_Project/blob/main/Logo%20Reog.png" alt="Logo Reog" width="350">
 
-Resident Organizer (REOG) is an mobile application that make an social assistance eligibility prediction and data collection to reduce social assistance mistargeting. Aplikasi ini bekerja dengan cara melakukan klasifikasi penghasilan dan kondisi kelayakan rumah dari user. Setelah mendapatkan input data dari user, aplikasi ini akan membaca data penghasilan dan foto rumah yang telah diinputkan user, lalu menjalankan proses prediksi untuk menentukan apakah user layak menerima bantuan sosial atau tidak.
+Resident Organizer (REOG) is an mobile application that make an social assistance eligibility prediction and data collection to reduce social assistance mistargeting. This application works by classifying the income and the conditions of the user's house. After getting data input from the user, this application will read the income data and photos of the house that the user has inputted, then run the prediction process to determine whether the user is eligible to receive social assistance or not.
 
 # REOG Backend Application
 
