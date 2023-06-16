@@ -12,7 +12,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 app = Flask(__name__)  # create a new FastAPI app instance
 
-port = int(os.getenv("PORT"))
+port=8081
+#port = int(os.getenv("PORT"))
 
 model1 = tf.keras.models.load_model('lite_model.h5')
 model2 = tf.keras.models.load_model('Kmeans.h5')
@@ -63,35 +64,55 @@ def salaryPrediction(pendapatan):
 
 @app.get("/")
 def hello_world():
-    return ("hello world")
+    return ("sukses")
 
-@app.post("/3/")
-def classifyhouse(input: UploadFile = File(...)):
-    print(input.filename)
-    print(type(input.filename))
-    savefile = input.filename
-    with open(savefile, "wb") as buffer:
-        shutil.copyfileobj(input.file, buffer)
-    result = houseDetection(savefile)
-    os.remove(savefile)
-    return result
+@app.route("/classifyhouse", methods=["POST"])
+def classifyhouse():
+    if request.method == "POST":
+        if "file" not in request.files:
+            return jsonify({"error": "No file uploaded"})
 
-@app.post("/4/")
-def predictsalary(pendapatan: int):
+        file = request.files["file"]
+        if file.filename == "":
+            return jsonify({"error": "No file selected"})
+
+        if file:
+            filename = secure_filename(file.filename)
+            file_path = os.path.join("uploads", filename)
+            file.save(file_path)
+            result = houseDetection(file_path)
+            os.remove(file_path)
+            return jsonify({"result": result})
+    else:
+        return jsonify({"message": "This route only supports POST method."})
+
+@app.route("/predictsalary", methods=["POST"])
+def predictsalary():
+    if "pendapatan" not in request.json:
+        return jsonify({"error": "No 'pendapatan' value provided"})
+
+    pendapatan = request.json["pendapatan"]
     output = salaryPrediction(pendapatan)
-    return output
+    return jsonify({"output": output})
 
-@app.post("/5/")
-def Kelayakan(pendapatan: int, input: UploadFile = File(...)):
-    result = classifyhouse(input)
-    output = predictsalary(pendapatan)
+@app.route("/kelayakan", methods=["POST"])
+def kelayakan():
+    if "file" not in request.files or "pendapatan" not in request.form:
+        return jsonify({"error": "No file or 'pendapatan' value provided"})
 
-    hasil_akhir = 1 if (result == 1 and output == 1) else 0
-    print("outout:", output)
-    print("result:", result)
-    print("hasil:", hasil_akhir)
-    label = ["tidak layak menerima bantuan", "layak menerima bantuan"]
-    return {"Kelayakan": label[hasil_akhir]}
+    file = request.files["file"]
+    pendapatan = int(request.form["pendapatan"])
+
+    if file and pendapatan:
+        filename = secure_filename(file.filename)
+        file_path = os.path.join("uploads", filename)
+        file.save(file_path)
+        result = houseDetection(file_path)
+        output = salaryPrediction(pendapatan)
+        os.remove(file_path)
+        hasil_akhir = 1 if (result == 1 and output == 1) else 0
+        label = ["tidak layak menerima bantuan", "layak menerima bantuan"]
+        return jsonify({"kelayakan": label[hasil_akhir]})
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=port, debug=True)
+    app.run(debug=True)
